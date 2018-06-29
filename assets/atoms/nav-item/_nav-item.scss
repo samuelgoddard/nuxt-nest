@@ -16,6 +16,12 @@
     @include link-hover() {
         color: palette(primary);
     }
+
+    &.is--active {
+        @include link() {
+            color: palette(primary);
+        }
+    }
 }
 
 // Primary colour modifier
