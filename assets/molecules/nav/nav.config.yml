@@ -1,0 +1,45 @@
+title: "Nav"
+status: "wip"
+
+context:
+  nav:
+    heading: Something
+    navItems:
+      -
+        title: About Sheffield
+      -
+        title: Our facilities
+        active: true
+      -
+        title: Find a course
+      -
+        title: Clearing stories
+      -
+        title: Ask Hallam
+      -
+        title: Apply now
+
+variants:
+-
+    name: no-border
+    context:
+      nav:
+        modifier: m-nav--no-border
+
+-
+  name: horizontal
+  context:
+    nav:
+      modifier: m-nav--horizontal
+
+-
+    name: horizontal-fill
+    context:
+      nav:
+        modifier: m-nav--horizontal-fill
+
+-
+    name: docked
+    context:
+      nav:
+        modifier: m-nav--docked

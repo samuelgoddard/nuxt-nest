@@ -1,0 +1,9 @@
+title: "Callout"
+status: "wip"
+
+variants:
+  -
+    name: small
+    context:
+      close:
+        modifier: close--small

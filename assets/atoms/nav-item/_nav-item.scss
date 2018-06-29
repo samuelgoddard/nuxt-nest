@@ -1,0 +1,50 @@
+// ==========================================================================
+// Nav Item Atom
+// ==========================================================================
+
+.nav-item {
+    display: block;
+
+    @include link() {
+        font-size: ms(0);
+        line-height: 1.44;
+        color: palette(black);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    @include link-hover() {
+        color: palette(primary);
+    }
+}
+
+// Primary colour modifier
+.nav-item--primary {
+    @include link() {
+        color: palette(primary);
+    }
+
+    @include link-hover() {
+        color: tint(palette(primary), "darken");
+    }
+}
+
+// By default nav items don't have any text-decoration, this modifier adds it
+.nav-item--underlined {
+    @include link() {
+        text-decoration: underline;
+    }
+}
+
+// Nav item with a chevron on the right
+.nav-item--chevron {
+    // Flex the inners (relies on nav-item text being wrapped in a span or div)
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+
+    .chevron {
+        margin-left: auto;
+        padding-left: 15px;
+    }
+}

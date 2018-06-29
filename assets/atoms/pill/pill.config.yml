@@ -1,0 +1,6 @@
+title: "Pill"
+status: "wip"
+
+context:
+  pill:
+    message: Pill Example

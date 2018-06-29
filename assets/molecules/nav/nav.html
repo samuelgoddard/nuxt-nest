@@ -1,0 +1,14 @@
+{% if nav.modifier == "m-nav--docked" %}
+  <nav class="m-nav m-nav--docked">
+      <a href="#" class="nav-item nav-item--primary nav-item--chevron"><span>Something</span> {% render '@chevron' %}</a>
+  </nav>
+{% else %}
+  <nav class="m-nav {{ nav.modifier }}">
+    {% if nav.heading %}<span class="m-nav__title">{{ nav.heading }}</span>{% endif %}
+
+    {% for item in nav.navItems %}
+      {# if the nav item has a chevron, if the nav item has an active state conditional #}
+      <a href="#" class="nav-item {% if item.chevron %}nav-item--chevron{% endif %} {% if not item.active %}nav-item--primary{% endif %}"><span>{{ item.title }}</span> {% if item.chevron %}{% render '@chevron--right' %}{% endif %}</a>
+    {% endfor %}
+  </nav>
+{% endif %}

@@ -1,0 +1,20 @@
+// ==========================================================================
+// Island Atom
+// ==========================================================================
+
+.island {
+    overflow-x: hidden;
+}
+
+// Loop through each colour and generate a island for each
+@each $color, $value in $colours-map {
+    .island--#{$color} {
+        background: $value;
+    }
+
+    // Here when an island color is combined with island--bordered we take the color
+    // and darken it, then assign it to a 1px stroke bottom
+    .island--#{$color}.island--bordered {
+        border-bottom: rem-calc(1) solid tint($value, "darken");
+    }
+}

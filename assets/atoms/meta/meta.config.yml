@@ -1,0 +1,14 @@
+title: "Meta"
+status: "wip"
+
+context:
+  meta:
+    message: Meta Text
+
+variants:
+  -
+    name: highlight
+    context:
+      meta:
+        message: Meta Text (Highlight)
+        modifier: meta--highlight

@@ -1,0 +1,10 @@
+<div class="btn-group {{ btnGroup.modifier }}">
+  {% render '@btn--primary' %}
+  {% render '@btn' %}
+  {% render '@btn' %}
+  {% render '@btn' %}
+
+  {% if btnGroup.modifier == 'with-caption' %}
+    <p class="micro"><strong>Lorem ipsum:</strong> dolor sit amet consecteteur</p>
+  {% endif %}
+</div>

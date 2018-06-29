@@ -1,0 +1,9 @@
+title: "Image"
+status: "wip"
+
+variants:
+  -
+    name: full
+    context:
+      img:
+        modifier: img--full
