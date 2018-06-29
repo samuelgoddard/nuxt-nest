@@ -2,11 +2,9 @@
   <section class="wrapper">
     <h1>Music</h1>
     <p>async data example</p>
-    <ul>
-      <li v-for="(music, index) in music" :key="index">
-        <nuxt-link :to="{ name: 'music-id', params: { id: music.id } }">{{ music.title }}</nuxt-link>
-      </li>
-    </ul>
+    <nav class="m-nav">
+      <nuxt-link v-for="(music, index) in music" :key="index" class="nav-item nav-item--underlined nav-item--chevron" :to="{ name: 'music-id', params: { id: music.id } }">{{ music.title }}</nuxt-link>
+    </nav>
   </section>
 </template>
 
