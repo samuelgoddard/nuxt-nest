@@ -31,7 +31,7 @@ module.exports = {
   ],
   router: {
     // Overwrite the base router active class
-    linkActiveClass: 'is--active'
+    linkExactActiveClass: 'is--active'
   },
   build: {
     /*
