@@ -29,6 +29,10 @@ module.exports = {
     // @TODO better way of implementing fonts?
     '~/assets/main.scss',
   ],
+  router: {
+    // Overwrite the base router active class
+    linkActiveClass: 'is--active'
+  },
   build: {
     /*
     ** Run ESLint on save
