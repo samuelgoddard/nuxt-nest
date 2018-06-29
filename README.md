@@ -1,6 +1,6 @@
 # nuxt-nest-boilerplate
 
-> A nuxt.js project boiletplate for NestHQ
+> A nuxt.js project boiletplate for Kind
 
 - Generic router example in `components/Nav.vue`
 - Generic layout example in `layouts`
