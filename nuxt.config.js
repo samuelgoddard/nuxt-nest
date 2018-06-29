@@ -3,7 +3,8 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Nuxt Nest Boilerplate',
+    titleTemplate: '%s | Nest',
+    title: 'Nest',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -25,6 +26,7 @@ module.exports = {
   */
   css: [
     // Use node-sass sass-loader (https://nuxtjs.org/api/configuration-css)
+    // @TODO better way of implementing fonts?
     '~/assets/main.scss',
   ],
   build: {
